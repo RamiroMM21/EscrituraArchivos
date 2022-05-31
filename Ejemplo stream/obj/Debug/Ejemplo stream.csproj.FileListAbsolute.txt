@@ -1,0 +1,7 @@
+C:\Users\AERO COOL\source\repos\Ejemplo stream\bin\Debug\Ejemplo stream.exe.config
+C:\Users\AERO COOL\source\repos\Ejemplo stream\bin\Debug\Ejemplo stream.exe
+C:\Users\AERO COOL\source\repos\Ejemplo stream\bin\Debug\Ejemplo stream.pdb
+C:\Users\AERO COOL\source\repos\Ejemplo stream\obj\Debug\Ejemplo stream.csproj.AssemblyReference.cache
+C:\Users\AERO COOL\source\repos\Ejemplo stream\obj\Debug\Ejemplo stream.csproj.CoreCompileInputs.cache
+C:\Users\AERO COOL\source\repos\Ejemplo stream\obj\Debug\Ejemplo stream.exe
+C:\Users\AERO COOL\source\repos\Ejemplo stream\obj\Debug\Ejemplo stream.pdb
