@@ -11,15 +11,16 @@ namespace Ejemplo_stream
     {
         static void Main(string[] args)
         {
-            StreamWriter sw = new StreamWriter("Ejemplo.txt");
+            string Nombre;
+            StreamWriter sw = new StreamWriter("Ejemplo.txt", true);
             //si el archivo no existe lo creara
             //si ya existe, escribira en el
 
-            string[] Lines ={
-                "Esta n la informacion de la primera linea",
-                "Esta es la segunda linea",
-                "Fin del tetxto"
-            };
+            Console.Write("Escriba un nombre con apellidos: ");
+            Nombre = Convert.ToString(Console.ReadLine());
+
+            string[] Lines = {Nombre};
+
             foreach (string Line in Lines)
             {
                 sw.WriteLine(Line);
