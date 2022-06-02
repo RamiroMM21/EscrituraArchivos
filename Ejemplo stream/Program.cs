@@ -9,26 +9,45 @@ namespace Ejemplo_stream
 {
     class Program
     {
-        static void Main(string[] args)
+        public class Carro
         {
-            string Nombre;
-            StreamWriter sw = new StreamWriter("Ejemplo.txt", true);
-            //si el archivo no existe lo creara
-            //si ya existe, escribira en el
+            public string NombreCarro, Marca;
+            public int Año;
 
-            Console.Write("Escriba un nombre con apellidos: ");
-            Nombre = Convert.ToString(Console.ReadLine());
 
-            string[] Lines = {Nombre};
-
-            foreach (string Line in Lines)
+            public Carro(string NombreCarro, int Año, string Marca)
             {
-                sw.WriteLine(Line);
+                this.NombreCarro = NombreCarro;
+                this.Año = Año;
+                this.Marca = Marca;
             }
-            sw.Close();//se debe cerrare el archivo
+            
 
-            Console.WriteLine("Escrbiendo en el archivo.....");
-            Console.ReadLine();
+            static void Main(string[] args)
+            {
+                StreamWriter sw = new StreamWriter("ejemplo.txt", true);
+
+                string NombreCarro, Marca;
+                int Año;
+
+                Console.Write("Escriba el nombre del carro: ");
+                NombreCarro = Console.ReadLine();
+
+                Console.Write("\nEscriba el año del carro: ");
+                Año = int.Parse(Console.ReadLine());
+
+                Console.Write("\nEscriba la marca del carro: ");
+                Marca = Console.ReadLine();
+
+                Carro car = new Carro(NombreCarro, Año, Marca);
+
+                sw.WriteLine(car.NombreCarro + "  " + car.Año + "  " + car.Marca);
+                
+                sw.Close(); 
+
+                Console.WriteLine("Escribiendo en el archivo.........");
+                Console.ReadLine();
+            }
         }
     }
 }
